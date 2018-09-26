@@ -17,7 +17,7 @@ curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compos
 chmod +x /usr/local/bin/docker-compose
 
 mkdir wordpressOld && cd wordpressOld
-wget https://raw.githubusercontent.com/LiLoveShi/OMGOMGOMG/wordpressOld/docker-compose.yml
+wget https://raw.githubusercontent.com/shiclaire/a2/master/wordpress1/docker-compose.yml
 cd ~
 
 mkdir wordpressNew && cd wordpressNew
