@@ -1,0 +1,18 @@
+version: '3.3'
+
+services:
+   db:
+     image: mysql:5.7
+     ports: 
+       - "3306:3306"
+     volumes:
+       - db_data:/var/lib/mysql
+     restart: always
+     environment:
+       MYSQL_ROOT_PASSWORD: ojxbcvisrev
+       MYSQL_DATABASE: wordpress
+       MYSQL_USER: wordpress
+       MYSQL_PASSWORD: devops123
+     # command: ["mysqld", "--log-bin=/var/lib/mysql/mysql-binlog", "--server-id=1"]
+volumes:
+    db_data:

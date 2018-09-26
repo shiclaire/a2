@@ -1,0 +1,11 @@
+part 1：
+1. 上传相关文件到 github 并修改 init.sh 脚本中的注释部分
+2. 执行 init.sh 脚本（自动配置环境 + 运行 wordpress）
+
+
+part 2：
+Q2： 执行 switch_wp2.sh 切换到另一版本的 wordpress
+
+Q3：
+1. 上传 backup_db.sh 到 github
+2. 修改 init_bak.sh 中的 backup_db.sh 的下载链接，并执行 init_bak.sh
