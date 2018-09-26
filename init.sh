@@ -21,7 +21,7 @@ wget https://raw.githubusercontent.com/shiclaire/a2/master/wordpress1/docker-com
 cd ~
 
 mkdir wordpressNew && cd wordpressNew
-wget https://raw.githubusercontent.com/LiLoveShi/OMGOMGOMG/wordpressNew/docker-compose.yml
+wget https://raw.githubusercontent.com/shiclaire/a2/master/wordpress2/docker-compose.yml
 cd ~
 
 mkdir mysql && cd mysql
