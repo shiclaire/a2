@@ -25,12 +25,12 @@ wget https://raw.githubusercontent.com/shiclaire/a2/master/wordpress2/docker-com
 cd ~
 
 mkdir mysql && cd mysql
-wget https://raw.githubusercontent.com/LiLoveShi/OMGOMGOMG/mysql/docker-compose.yml
+wget https://raw.githubusercontent.com/shiclaire/a2/master/mysql/docker-compose.yml
 cd ~
 
 mkdir nginx && cd nginx
-wget https://raw.githubusercontent.com/LiLoveShi/OMGOMGOMG/master/wp1
-wget https://raw.githubusercontent.com/LiLoveShi/OMGOMGOMG/master/wp2
+wget https://raw.githubusercontent.com/shiclaire/a2/master/nginx/wp1
+wget https://raw.githubusercontent.com/shiclaire/a2/master/nginx/wp2
 cd ~
 
 sudo gpasswd -a ubuntu docker
