@@ -45,6 +45,16 @@ rm /etc/nginx/sites-enabled/*
 cp nginx/wp1 /etc/nginx/sites-enabled/
 service nginx reload
 
+echo "download the switch file"
+
+wget https://raw.githubusercontent.com/LiLoveShi/OMGOMGOMG/master/switch_wpNew.sh
+wget https://raw.githubusercontent.com/LiLoveShi/OMGOMGOMG/master/switch_wpOld.sh
+
+
+
+echo "download files required in assignment two"
+
+wget https://raw.githubusercontent.com/LiLoveShi/OMGOMGOMG/master/init_bak.sh
 
 #echo "create a account"
 
