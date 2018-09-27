@@ -1,29 +1,27 @@
 #!/bin/bash
-#use mysqldump to fully backup mysql data
-
-
-BakDir=~/
-
-LogFile=~/bak.log
 
 
 
-Date=`date +%Y%m%d`
+cd ~/
 
-Begin=`date +"%Y/%m/%d %H:%M:%S"`
+wget https://raw.githubusercontent.com/LiLoveShi/OMGOMGOMG/master/backup_db.sh
 
-cd $BakDir
+if [ "$(crontab -l | grep 'no crontab' | wc -l)" -gt 0 ];then
 
-DumpFile=$Date.sql
+    echo "*/5 * * * * /bin/bash /home/ubuntu/backup_db.sh &" > mycron
 
-GZDumpFile=wordpress_db_bak_$Date.tgz
+    crontab mycron
 
-mysqldump -uroot -pojxbcvisrev -h172.17.0.1 wordpress --lock-all-tables --routines --triggers --events > $DumpFile
+    rm mycron
 
-tar zcvf $GZDumpFile $DumpFile
+elif [ "$(crontab -l | grep backup_db.sh | wc -l)" -eq 0 ];then
 
-rm $DumpFile
+    crontab -l > mycron
 
-Last=`date +"%Y/%m/%d %H:%M:%S"`
+    echo "*/5 * * * * /bin/bash /home/ubuntu/backup_db.sh &" >> mycron
 
-echo Start: $Begin end: $Last $GZDumpFile succ >> $LogFile
+    crontab mycron
+
+    rm mycron
+
+fi
