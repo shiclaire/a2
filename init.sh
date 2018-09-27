@@ -16,11 +16,11 @@ service docker start
 curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 
-mkdir wordpressOld && cd wordpressOld
+mkdir wordpress1 && cd wordpress1
 wget https://raw.githubusercontent.com/shiclaire/a2/master/wordpress1/docker-compose.yml
 cd ~
 
-mkdir wordpressNew && cd wordpressNew
+mkdir wordpress2 && cd wordpress2
 wget https://raw.githubusercontent.com/shiclaire/a2/master/wordpress2/docker-compose.yml
 cd ~
 
@@ -34,8 +34,7 @@ wget https://raw.githubusercontent.com/shiclaire/a2/master/nginx/wp2
 cd ~
 
 sudo gpasswd -a ubuntu docker
-sudo su
-su ubuntu
+
 
 docker-compose -f mysql/docker-compose.yml up -d
 
@@ -46,9 +45,9 @@ cp nginx/wp1 /etc/nginx/sites-enabled/
 service nginx reload
 
 echo "download the switch file"
-
-wget https://raw.githubusercontent.com/shiclaire/a2/master/switch_wpOld.sh
 wget https://raw.githubusercontent.com/shiclaire/a2/master/switch_wpNew.sh
+wget https://raw.githubusercontent.com/shiclaire/a2/master/switch_wpOld.sh
+
 
 #echo "create a account"
 
