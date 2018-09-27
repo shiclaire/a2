@@ -47,9 +47,8 @@ service nginx reload
 
 echo "download the switch file"
 
-wget https://raw.githubusercontent.com/shiclaire/a2/master/switch_wpNew.sh
 wget https://raw.githubusercontent.com/shiclaire/a2/master/switch_wpOld.sh
-
+wget https://raw.githubusercontent.com/shiclaire/a2/master/switch_wpNew.sh
 
 #echo "create a account"
 
