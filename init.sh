@@ -46,8 +46,8 @@ cp nginx/wp1 /etc/nginx/sites-enabled/
 service nginx reload
 
 
-# echo "create a account"
+echo "create a account"
 
-# SITENAME=`curl ifconfig.co`
+SITENAME=`curl ifconfig.co`
 
-# wp_install_result=$(php -r 'define("WP_SITEURL", "http://'$SITENAME'");define("WP_INSTALLING", true);require_once("./wp-load.php");require_once("wp-admin/includes/upgrade.php");$response=wp_install("weclcome", admin, "aaa@gmail.com", false, null, "ABC");echo $response;')
+wp_install_result=$(php -r 'define("WP_SITEURL", "http://'$SITENAME'");define("WP_INSTALLING", true);require_once("./wp-load.php");require_once("wp-admin/includes/upgrade.php");$response=wp_install("weclcome", admin, "aaa@gmail.com", false, null, "ABC");echo $response;')
