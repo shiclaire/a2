@@ -6,6 +6,9 @@ echo "install nginx curl mysql-client"
 apt install -y nginx curl mysql-client >/dev/null 2>&1
 service nginx start
 
+echo "install crontab"
+apt-get install cron
+
 echo "install docker"
 
 cd ~/
