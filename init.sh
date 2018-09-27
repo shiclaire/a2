@@ -47,14 +47,9 @@ service nginx reload
 
 echo "download the switch file"
 
-wget https://raw.githubusercontent.com/LiLoveShi/OMGOMGOMG/master/switch_wpNew.sh
-wget https://raw.githubusercontent.com/LiLoveShi/OMGOMGOMG/master/switch_wpOld.sh
+wget https://raw.githubusercontent.com/shiclaire/a2/master/switch_wpNew.sh
+wget https://raw.githubusercontent.com/shiclaire/a2/master/switch_wpOld.sh
 
-
-
-echo "download files required in assignment two"
-
-wget https://raw.githubusercontent.com/LiLoveShi/OMGOMGOMG/master/init_bak.sh
 
 #echo "create a account"
 
