@@ -2,8 +2,6 @@
          
 
   - hosts: local
-  
-    connection: local
 
     name: Configure instance(s)
 
