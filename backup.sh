@@ -1,6 +1,6 @@
 #!/bin/bash
 
-today=`date '+%Y-%m-%d %H:%M:%S'`
+today=`date '+%Y%m%d'`
 bakdir=wordpress-$today
 
 mkdir /home/$bakdir
