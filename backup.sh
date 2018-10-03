@@ -4,8 +4,6 @@ today=`date '+%Y-%m-%d %H:%M:%S'`
 bakdir=wordpress-$today
 
 mkdir /home/$bakdir
-mkdir /home/$bakdir/site
-mkdir /home/$bakdir/mysql
 
 bakfile=/home/wordpress-${today}.tar.gz
 [ -f $bakfile ] && rm -rf $bakfile
