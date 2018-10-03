@@ -20,7 +20,7 @@ DumpFile=$Date.sql
 
 GZDumpFile=wordpress_db_bak_$Date.tgz
 
-mysqldump -uroot -p"ojxbcvisrev" -h172.17.0.1 wordpress --lock-all-tables --routines --triggers --events > $DumpFile
+mysqldump -uroot -p"ojxbcvisrev" -h54.245.21.17 wordpress --lock-all-tables --routines --triggers --events > $DumpFile
 
 tar zcvf $GZDumpFile $DumpFile
 
