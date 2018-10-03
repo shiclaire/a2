@@ -10,7 +10,7 @@ bakfile=/home/wordpress-${today}.tar.gz
 
 
 #Here, the Password is your database password you set. CHANGE it make sure is yours password!!!
-mysqldump -uroot -p"1234" -h127.0.0.1 wordpress --all-databases > /home/$bakdir/wordpress_db.sql
+mysqldump -uroot -p"1234" -h127.0.0.1 wordpress --all-databases > /home/$bakdir/wordpress.sql
 
 tar zcvfP ${bakfile} /home/$bakdir >/dev/null
 rm -rf /home/$bakdir
